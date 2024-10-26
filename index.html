@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Marketing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #c8102e, #111);
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #c8102e;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .tagline {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .text {
+            margin: 20px 0;
+            font-size: 24px;
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ff1a1a;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            text-align: center;
+            color: #c8102e;
+        }
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .price-option {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .crossed {
+            text-decoration: line-through;
+            color: red;
+        }
+        .countdown {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0;
+            color: #ff4d4d;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #f4f4f4;
+        }
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .close {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #c8102e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .testimonial-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+            position: relative;
+        }
+        .testimonial-box p {
+            margin: 0;
+        }
+        .name {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EDU MARKETTING</h1>
+        <p class="tagline">The best marketing service provider for educational institutes</p>
+    </header>
+
+    <div class="container">
+        <p class="text"> <p>ব্যবসা বা কোচিং সেন্টারের জন্য মার্কেটিং করবেন??</p>
+<p>কিন্তু কীভাবে করবেন?</p>
+<p>কেউ বলছে, লিফলেট লাগাতে আবার কেউ বলছে, অনলাইন মার্কেটিং করতে।</p>
+<p>চলুন জেনে নেই, কোনটার কী সুবিধা।</p>
+
+<h3>লিফলেট / বিলবোর্ড:</h3>
+<ul>
+  <li><strong>1.High Cost</strong>: ১০,০০০ লিফলেট বানাতে খরচ প্রায় ৭/৮ হাজার টাকা।</li>
+  <li><strong>2.Low Attention</strong>: বেশিরভাগ লিফলেট পোটেনশিয়াল কাস্টমারের কাছেই পৌঁছায় না। ১০০ টা লিফলেটের মধ্যে আসল কাস্টমারের কাছে যায় মাত্র ৩ টা।</li>
+  <li><strong>3.Poor sell</strong>: ১০০ লিফলেটে কিনতে আগ্রহী কাস্টমার পাওয়া যায় মাত্র ১ জন।</li>
+  <li><strong>4.Old Method</strong>: বাজারে হাজারো লিফলেট, পোস্টার থাকলে আপনার লিফলেট দেখলেই, কাস্টমার কেন আপনাকে কল দেবে?? এটা ভেবেছেন কি??</li>
+</ul>
+
+<p><strong>তাহলে সমাধান কী??</strong></p>
+
+<h3>ডিজিটাল মার্কেটিং</h3>
+<p>আমাদের থেকে আপনি টার্গেটেড কাস্টমারের নম্বর পাবেন। ঐসব নম্বরে আপনি কল দিতে পারেন, অথবা Whatsapp-এ ভিডিও, অডিও, টেক্সট পাঠাতে পারেন। যেহেতু প্রতিটি নম্বরই সম্ভাব্য কাস্টমারের এবং বর্তমানে প্রায় সবাই Whatsapp মেসেজ চেক করে, তাই সাকসেস রেট প্রায় <strong>৩৯%</strong><br>
+হ্যাঁ, ৩৯%।</p>
+
+<h3>ডিজিটাল মার্কেটিং এর সুবিধা:</h3>
+<ul>
+  <li><strong>1. 100% Potential Customer </strong>: যাদের নম্বর আমাদের থেকে নেবেন, সবাই আপনার এই কাস্টমার। তাই অযথা সময় নষ্টের কোনো ব্যাপারই নেই।</li>
+  <li><strong>2. Multiple way Marketing </strong>: বোরিং লিফলেটের বদলে, আপনি Whatsapp-এই অডিও, টেক্সট, ভিডিও সব মাধ্যমেই প্রোমোশন চালাতে পারবেন। একটি সুন্দর করে ভিডিও দিতে পারলে, কাস্টমারের কিনবার হার বাড়ে প্রায় ৪৮% পর্যন্ত।</li>
+  <li><strong>3.High buying   Rate </strong>: মানুষ সাধারণত অলস। তাই, লিফলেট দেখে আপনাকে কল দেবে, এই চান্স খুব কম। কিন্তু আপনি নিজে থেকে কল দিলে, কাস্টমার তো প্রোডাক্ট নিতে বাধ্য।</li>
+  <li><strong>4.Number Reuse </strong>: একবার নম্বর কিনলে, সেই নম্বর আজীবন আপনার। তাই বারবার প্রোমোশন করতে পারবেন আপনি।</li>
+  <li><strong>5.High value for Money</strong>: ২/৩০০০ হাজার টাকার নম্বর কিনে, ১ লাখ + ইনকাম করা খুব বেশি কঠিন কিছু নয়। তাই, সিদ্ধান্ত আপনার, বোকা হবেন নাকি বুদ্ধিমান।</li>
+</ul></p>
+        <a href="https://x.com" class="button">Buy Now</a>
+
+        <h2>Companies That Worked With Us</h2>
+        <div class="box" onclick="showPopup('Science Point')">Science Point</div>
+        <div class="box" onclick="showPopup('Khairul Coaching')">Khairul Coaching</div>
+        <div class="box" onclick="showPopup('Best Tuition Media')">Best Tuition Media</div>
+        <div class="box" onclick="showPopup('UDVASH Teachers Media')">UDVASH Teachers Media</div>
+        <div class="box" onclick="showPopup('7 Seconds Madrasha')">7 Seconds Madrasha</div>
+        <div class="box" onclick="showPopup('And Many More...')">And Many More...</div>
+
+        <h2>Buyers' Opinions</h2>
+        <div class="testimonial-box">
+            <p>“আমি তাদের মার্কেটিং সেবার মাধ্যমে 154 জন নতুন ছাত্র পেয়েছি। আমার প্রতিষ্ঠান এখন অনেক এগিয়ে!”</p>
+            <div class="name">খাইরুল স্যার, শিক্ষার্থী</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“সেরা মার্কেটিং সংস্থা! আমি নিশ্চিত, যেকোনো প্রতিষ্ঠানকে তারা উন্নতির পথে এগিয়ে নিতে পারে।” </p>
+            <div class="name">নোমান, সিইও, সায়েন্স পয়েন্ট</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“তারা আমাকে হাজার হাজার ছাত্রের কাছে পৌঁছাতে সাহায্য করেছে। সত্যিই অসাধারণ!”</p>
+            <div class="name">যামিন, টিউশন মিডিয়া</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“এতদিন ধরে এত ছাত্র পেতে পারব ভাবিনি। তাদের কৌশল কাজ করেছে!”</p>
+            <div class="name">রশিদ, টিউশনের মালিক</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“অসাধারণ ফলাফল! আমি তাদের সেবার জন্য কৃতজ্ঞ।”</p>
+            <div class="name">আমিনা, শিক্ষক</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“যেকোনো শিক্ষাপ্রতিষ্ঠানের জন্য আমি তাদের পরামর্শ দেব।”</p>
+            <div class="name">ফারহান, ব্যবসায়ী</div>
+        </div>
+        <div class="testimonial-box">
+            <p>“আমার ভর্তি এক মাসের মধ্যে দ্বিগুণ হয়েছে। সত্যিই অভূতপূর্ব!”</p>
+            <div class="name">শিরীন, টিউশনের মালিক</div>
+        </div>
+
+        <h2>Pricing Model</h2>
+        <div class="pricing">
+            <div class="price-option">
+                <span class="crossed">3100 Taka</span><br>
+                2100 Taka<br>
+                <small>200 numbers</small>
+            </div>
+            <div class="price-option">
+                <span class="crossed">3700 Taka</span><br>
+                2700 Taka<br>
+                <small>300 numbers</small>
+            </div>
+            <div class="price-option">
+                <span class="crossed">3900 Taka</span><br>
+                2900 Taka<br>
+                <small>500 numbers</small>
+            </div>
+        </div>
+
+        <div class="countdown">
+            <span id="countdown"></span> left for 1000 Taka discount
+        </div>
+
+        <a href="https://x.com" class="button">Buy Now</a>
+        <a href="https://y.com" class="button">Contact Us</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Edu Marketing</p>
+    </footer>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p id="popup-text"></p>
+            <button class="close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(text) {
+            document.getElementById('popup-text').innerText = text;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Countdown Timer: 2 days, 5 hours, 45 minutes
+        const countdownDate = new Date(Date.now() + (2 * 24 * 60 * 60 * 1000) + (5 * 60 * 60 * 1000) + (45 * 60 * 1000)).getTime();
+        
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+  </html>
